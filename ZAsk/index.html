@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>ZAsk</title>
+</head>
+<body onload="view()">
+    <div class="overall">
+        <div class="animation-light w3-center w3-animate-zoom"></div>
+        <div class="transition-effect"></div>
+        <div class="overall-sub">
+            <div class="header">
+                <div class="head" >
+                    <div class="first">
+                        <div class="menu-icon" onclick="menudrop()"></div>
+                        <div class="light-img"></div>
+                        <div class="arrow" onclick="arrowdrop()" onmouseover= "removearrowdrop()"></div>
+                        <a class="questions">Questions</a>
+                        <a class="article">Articles</a>
+                        <a class="tag">Tags</a>
+                        <a class="users">Users</a>
+                    </div>
+                    <div class="arrow-drop">
+                        <div class="communities">My Communities</div>
+                       
+                        <iframe class="iframe" src="iframe.html" frameborder="0" ></iframe>
+                    </div>
+                    <div class="filter-drop" >
+                        <div class="f-top">
+                           
+                                <div class="filters">Filters</div>
+                                <div class="buttons">
+                                    <div class="cancel"  onclick="removefilter()">Cancel</div>
+                                    <div class="apply">Apply</div>
+                                </div>
+                           
+                        </div>
+                        <iframe src="filter.html" frameborder="0" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="menu-drop">
+                        <div class="x-btn" onclick="removemenu()">
+                            <div class="x-btn-inner"></div>
+                        </div>
+                        
+                            <iframe class="x-iframe" src="menu.html" frameborder="0"></iframe>
+                        
+                    </div>
+                    <div class="second">
+                        <div class="search-icon"></div>
+                        <input type="text" class="search" placeholder="search"  >
+                    </div>
+                    <div class="third">
+                        <div class="third-inner">
+                            <div class="profile-icon"></div>
+                            <div class="num1">4.3k</div>
+                            <div class="num2">
+                                <div class="yellow-color"></div>27
+                            </div>
+                            <div class="num3">
+                                <div class="ash-color"></div>28
+                            </div>
+                            <div class="num4">
+                                <div class="brown-color"></div>6
+                            </div>
+                        </div>
+                       
+                        <div class="cup-icon">
+                            <div class="cup1">
+                                <div class="icon1">
+
+                                </div>
+                            </div>
+                            <div class="cup2">
+                                <div class="icon2"></div>
+                            </div>
+                            <div class="cup3">
+                                <div class="icon3"></div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div><!--first part of header is closed-->
+        <div class="container">
+            <!-- <div class="opacity-content"></div> -->
+            
+            <div class="zask">
+                <div class="zask-text">ZAsk</div>
+            </div><!--second part header "zask" is closed-->
+            <div class="content">
+              
+                <div class="whole-content">
+                    <div class="long">
+                        <div class="ques">
+                            <div class="ques-sub">
+                            <div class="ques-inner">
+                                <div class="ques-text">Questions</div>
+                                <div class="filter" onclick="filterdrop()">
+                                    <div class="fil-img"></div>
+                                    <div class="fill-text">Filters</div>
+                                </div>
+                            </div>
+                            <div class="new" onmousedown="newdrop()" onmouseleave= "removenewdrop()">
+                                <div class="new-inner">
+                                    <div class="new-icon"></div>
+                                    <div class="new-text">New</div>
+                                    
+                                </div>
+                                <div class="new-arrow"></div>
+                                <div class="new-drop">
+                                    <div style=" background-color: #f1ecec;">New</div>
+                                    <div>Views</div>
+                                    <div>Score</div>
+                                </div>
+                               
+                            </div>
+                            </div>
+                        </div>
+                        <div class="big">
+                            <div class="box">
+                                <div class="flex-box">
+                                    <div class="answers">
+                                        <div class="f-t">Answers</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="scores">
+                                        <div class="f-t">Scores</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="f-t">Views</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                </div>
+                                <div class="auto-box">
+                                    <div class="auto-box-inner">
+                                        <h1>How to ask a good question</h1>
+                                        <p>A question that is not understand text Quote text console.log("text").</p>
+                                        <div class="details">
+                                            <div class="quality">quality</div>
+                                            <div class="icon-mail">
+    
+                                                <div class="mail-detail"><span style="color: rgb(66, 164, 245);cursor: pointer; font-size: 12;">jesintha2507@</span> asked on Nov 9'21 @ 11:07 AM</div>
+                                                <div class="mail-icon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="box">
+                                <div class="flex-box">
+                                    <div class="answers">
+                                        <div class="f-t">Answers</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="scores">
+                                        <div class="f-t">Scores</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="f-t">Views</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                </div>
+                                <div class="auto-box">
+                                    <div class="auto-box-inner">
+                                        <h1>How to ask a good question</h1>
+                                        <p>A question that is not understand text Quote text console.log("text").</p>
+                                        <div class="details">
+                                            <div class="quality">quality</div>
+                                            <div class="icon-mail">
+    
+                                                <div class="mail-detail"><span style="color: rgb(66, 164, 245);cursor: pointer;">jesintha2507@</span> asked on Nov 9'21 @ 11:07 AM</div>
+                                                <div class="mail-icon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="box">
+                                <div class="flex-box">
+                                    <div class="answers">
+                                        <div class="f-t">Answers</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="scores">
+                                        <div class="f-t">Scores</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="f-t">Views</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                </div>
+                                <div class="auto-box">
+                                    <div class="auto-box-inner">
+                                        <h1>How to ask a good question</h1>
+                                        <p>A question that is not understand text Quote text console.log("text").</p>
+                                        <div class="details">
+                                            <div class="quality">quality</div>
+                                            <div class="icon-mail">
+    
+                                                <div class="mail-detail"><span style="color: rgb(66, 164, 245);cursor: pointer;">jesintha2507@</span> asked on Nov 9'21 @ 11:07 AM</div>
+                                                <div class="mail-icon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="box">
+                                <div class="flex-box">
+                                    <div class="answers">
+                                        <div class="f-t">Answers</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="scores">
+                                        <div class="f-t">Scores</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="f-t">Views</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                </div>
+                                <div class="auto-box">
+                                    <div class="auto-box-inner">
+                                        <h1>How to ask a good question</h1>
+                                        <p>A question that is not understand text Quote text console.log("text").</p>
+                                        <div class="details">
+                                            <div class="quality">quality</div>
+                                            <div class="icon-mail">
+    
+                                                <div class="mail-detail"><span style="color: rgb(66, 164, 245);cursor: pointer;">jesintha2507@</span> asked on Nov 9'21 @ 11:07 AM</div>
+                                                <div class="mail-icon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="box">
+                                <div class="flex-box">
+                                    <div class="answers">
+                                        <div class="f-t">Answers</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="scores">
+                                        <div class="f-t">Scores</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="f-t">Views</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                </div>
+                                <div class="auto-box">
+                                    <div class="auto-box-inner">
+                                        <h1>How to ask a good question</h1>
+                                        <p>A question that is not understand text Quote text console.log("text").</p>
+                                        <div class="details">
+                                            <div class="quality">quality</div>
+                                            <div class="icon-mail">
+    
+                                                <div class="mail-detail"><span style="color:rgb(66, 164, 245) ;cursor: pointer;">jesintha2507@</span> asked on Nov 9'21 @ 11:07 AM</div>
+                                                <div class="mail-icon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="box">
+                                <div class="flex-box">
+                                    <div class="answers">
+                                        <div class="f-t">Answers</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="scores">
+                                        <div class="f-t">Scores</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="f-t">Views</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                </div>
+                                <div class="auto-box">
+                                    <div class="auto-box-inner">
+                                        <h1>How to ask a good question</h1>
+                                        <p>A question that is not understand text Quote text console.log("text").</p>
+                                        <div class="details">
+                                            <div class="quality">quality</div>
+                                            <div class="icon-mail">
+    
+                                                <div class="mail-detail"><span style="color: rgb(66, 164, 245);cursor: pointer;">jesintha2507@</span> asked on Nov 9'21 @ 11:07 AM</div>
+                                                <div class="mail-icon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="box">
+                                <div class="flex-box">
+                                    <div class="answers">
+                                        <div class="f-t">Answers</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="scores">
+                                        <div class="f-t">Scores</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="f-t">Views</div>
+                                        <div class="s-t">1</div>
+                                    </div>
+                                </div>
+                                <div class="auto-box">
+                                    <div class="auto-box-inner">
+                                        <h1>How to ask a good question</h1>
+                                        <p>A question that is not understand text Quote text console.log("text").</p>
+                                        <div class="details">
+                                            <div class="quality">quality</div>
+                                            <div class="icon-mail">
+    
+                                                <div class="mail-detail"><span style="color: rgb(66, 164, 245);cursor: pointer;">jesintha2507@</span> asked on Nov 9'21 @ 11:07 AM</div>
+                                                <div class="mail-icon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="light-view">
+                                <div class="fixed-light"></div>
+                            </div>
+                          
+                        </div><!--big closed-->
+                    </div>
+                    <div class="short">
+                        <div class="short-inner">
+                        <div class="ask-ques">
+                            <div class="ask-num">
+                                <div class="num-text"><span class="num-font">41</span> <span class="num-font1">Question(s)</span></div>
+                                <div class="subscriber">Subscribe!</div>
+                                <div></div>
+                            </div>
+                            <div class="ask-button">ASK QUESTION</div>
+                        </div>
+                        <div class="tags">
+                            <div class="follow-tag">
+                                <div class="tag-text">
+                                    <h1 class="f-text">Follow Tag</h1>
+                                    <p class="e-text">Edit</p>
+                                </div>
+                            </div>
+                            <div class="ignore-tag">
+                                <div class="tag-text">
+                                    <h1 class="f-text">Ignore  Tag</h1>
+                                    <p class="e-text">Edit</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--container div is closed -->
+        </div> <!--Overall sub closed-->
+    </div> <!--overall div is  closed -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

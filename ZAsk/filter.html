@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <link rel="stylesheet" href="filter.css">
+    <script src="filter.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="contain">
+            
+            <div class="clear-all">
+                <div>Clear All</div>
+            </div>
+            <div class="long">
+                <div class="main">
+                    <div class="item">
+                        <div class="top" onclick="display()">
+                            <div class="text">CATEGORY</div>
+                            <div class="icons">
+                                <div class="arrow"></div>
+                                <div class="arrow1"  onmousemove="remove()"></div>
+                            </div>
+                        </div>
+                        <div class="bottom1">
+                            <div class="radio">
+                                <div>
+                                    <input type="radio" id="all" name="category" value="All">
+                                     <label for="all">All</label><br>
+                                </div>
+                                <div>
+                                    <input type="radio" id="questions" name="category" value=" My Questions">
+                                     <label for="questions">My Questions</label><br>
+                                </div>
+                                <div>
+                                    <input type="radio" id="tags" name="category" value="Tags">
+                                     <label for="tags">Following Tag</label><br>
+                                </div>
+                                <div>
+                                    <input type="radio" id="fav" name="category" value="Favourite">
+                                     <label for="fav">Favourite</label><br>
+                                </div>
+                                <div>
+                                    <input type="radio" id="fea" name="category" value="featured">
+                                     <label for="fea">Featured</label><br>
+                                </div>
+                                <div>
+                                    <input type="radio" id="unans" name="category" value="UnAnswerd">
+                                     <label for="unans">Un Answerd</label><br>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item"  >
+                        <div class="top" onclick="display1()">
+                            <div class="text">TAGS</div>
+                            <div class="icons">
+                                <div class="arrow"></div>
+                                <div class="arrow1" onmousemove="remove1()"></div>
+                            </div>
+                        </div>
+                        <div class="bottom2">
+                            <div class="bottom2-inner">
+                            <div>
+                                <div class="box">
+                                    <div class="text">All</div>
+                                    <div class="arrow1"></div>
+                                </div>
+                            <div class="search">
+                                <div class="search-icon"></div>
+                                <input type="text" class="search-input" placeholder="Search tags"  >
+                            </div>
+                            <div class="check"></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="top" onclick="display2()">
+                            <div class="text">CREATE TIME</div>
+                            <div class="icons">
+                                <div class="arrow"></div>
+                                <div class="arrow1" onmousemove="remove2()"></div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="bottom3">
+                                <div class="time-box">
+                                    <div class="before" onclick="dropview()" >
+                                        <div>Before</div>
+                                        <div class="arrow1" onmousemove="removedrop()"></div>
+                                    </div>
+                                    <input class="search-input1" type="date" placeholder="mm/dd/yy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drop2">
+                            <div>Before</div>
+                            <div>After</div>
+                            <div>Between</div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="top" onclick="display3()">
+                            <div class="text">SCORE</div>
+                            <div class="icons">
+                                <div class="arrow"></div>
+                                <div class="arrow1" onmousemove="remove3()"></div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class=" bottom4">
+                                <div class="from">
+                                    <label for="range">From : </label>
+                                    <input type="number" class="search-input2" placeholder="Range"> 
+                                    <label for="range">To: </label>
+                                    <input type="number" class="search-input2" placeholder="Range">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="top"  onclick="display4()">
+                            <div class="text">ANSWER COUNT</div>
+                            <div class="icons">
+                                <div class="arrow"></div>
+                                <div class="arrow1"  onmousemove="remove4()"></div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="bottom5">
+                                <div class="from">
+                                    <label for="range">From : </label>
+                                    <input type="number" class="search-input2" placeholder="Range"> 
+                                    <label for="range">To: </label>
+                                    <input type="number" class="search-input2" placeholder="Range">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="top" onclick="display5()">
+                            <div class="text">ANSWER</div>
+                            <div class="icons">
+                                <div class="arrow"></div>
+                                <div class="arrow1" onmousemove="remove5()"></div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="bottom6">
+                                <div class="bot-6-con">
+                                    <div class="text">All</div>
+                                    <div class="arrow1"></div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="item">
+                        <div class="top" onclick="display6()">
+                            <div class="text">ANSWERED BY</div>
+                            <div class="icons">
+                                <div class="arrow"></div>
+                                <div class="arrow1" onmousemove="remove6()"></div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="bottom7">
+                                <div class="search">
+                                    <div class="search-icon"></div>
+                                    <input type="text" class="search-input" placeholder="Search tags"  >
+                                </div>
+                                <div class="check"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="top" onclick="display7()">
+                            <div class="text">VIEWS</div>
+                            <div class="icons">
+                                <div class="arrow"></div>
+                                <div class="arrow1" onmousemove="remove7()"></div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class=" bottom8">
+                                <div class="from">
+                                    <label for="range">From : </label>
+                                    <input type="number" class="search-input2" placeholder="Range"> 
+                                    <label for="range">To: </label>
+                                    <input type="number" class="search-input2" placeholder="Range">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="top" onclick="display8()">
+                            <div class="text">BOUNTRY</div>
+                            <div class="icons">
+                                <div class="arrow"></div>
+                                <div class="arrow1" onmousemove="remove8()"></div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="bottom9">
+                                
+                                <div class="line">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
