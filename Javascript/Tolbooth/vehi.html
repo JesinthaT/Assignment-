@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tollbooth</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="toll.js"></script>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .area {
+        width: 100%;
+        height: 400px;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 30% 30% 20%;
+        grid-gap: 10px;
+    }
+
+    .empty1 {
+        position: relative;
+        background-color: blanchedalmond;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .empty2 {
+        position: relative;
+        background-color: blanchedalmond;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .road {
+        background-color: rgb(59, 58, 58);
+        /* position: relative; */
+        /* display: flex; */
+    }
+
+    .tolgate {
+        width: 100px;
+        height: 47px;
+        background-color: pink;
+        margin-left: 500px;
+        padding: 15px;
+    }
+
+    .vehicle {
+        width: 70px;
+        height: 50px;
+        padding-left: 43px;
+        padding-top: 19px;
+        margin: 5px;
+        /* background-color: rgb(255, 255, 255); */
+        position: relative;
+
+        left: 0;
+
+        background-image: url(/home/zoho/Desktop/practise/tollbooth1/image/car.jpeg);
+        background-repeat: no-repeat;
+        background-position-x: 45.5%;
+        background-position-y: 20%;
+        background-size: 99px;
+
+    }
+
+    .newDIV {
+        left: 500px;
+        transition-delay: 1s;
+        transition: 3s;
+        position: relative;
+
+    }
+
+    .new1DIV {
+        transition-delay: 1s;
+        transition-duration: 3s;
+        left: 1200px;
+
+    }
+
+    .new2DIV {
+        left: 0;
+    }
+
+    .new3DIV {
+        left: 500px;
+        transition-duration: 3s;
+    }
+
+    .new4DIV {
+        transition-delay: 1s;
+        transition-duration: 3s;
+        left: 0px;
+    }
+</style>
+
+<body>
+    <div class="area">
+        <div class="empty1 extra1" id="first">
+            <div class="vehicle " onclick="waiting(this)" no="TN0021" boothno="T121" type="car">1</div>
+            <div class="vehicle " onclick="waiting(this)" no="TN0022" boothno="T121" type="car">2</div>
+            <div class="vehicle " onclick="waiting(this)" no="TN0023" boothno="T121" type="car">3</div>
+            <div class="vehicle " onclick="waiting(this)" no="TN0024" boothno="T121" type="car">4</div>
+        </div>
+        <div class="road" id="froad">
+            <div class="tolgate">TollBooth</div>
+        </div>
+        <div class="road" id="sroad">
+            <div class="tolgate">TollBooth</div>
+        </div>
+        <div class="empty2" id="last"></div>
+    </div>
+</body>
+<script>
+    var c=document.getElementById("first")[0];
+    console.log(c);
+    function waiting(x) {
+        //  var x=   document.getElementById("0"); 
+        // var d = x.getAttribute("no");
+        var e = x.getAttribute("boothno");
+        var f = x.getAttribute("type");
+        document.querySelector("#froad").appendChild(x);
+        setTimeout(Move, 2000);
+
+
+        function Move() {
+            x.classList.add("newDIV");
+            setTimeout(() => {
+                x.classList.add("new1DIV");
+
+            }, 3000);
+            setTimeout(() => {
+                x.classList.add("new2DIV");
+                document.querySelector("#last").appendChild(x);
+                x.removeAttribute("onclick");
+                x.addEventListener("click", Move3);
+
+            }, 8000);
+        }
+
+        function Move3() {
+            x.classList.remove("new2DIV");
+            document.querySelector("#sroad").appendChild(x);
+            setTimeout(() => {
+                x.classList.add("new3DIV");
+                setTimeout(() => {
+                    x.classList.add("new4DIV");
+                    x.removeEventListener("click", Move3);
+                    setTimeout(() => {
+                        document.querySelector('#first').appendChild(x);
+                        x.addEventListener("click", waiting);
+                    }, 4000);
+                }, 5000);
+            }, 2000);
+        }
+        function Move4() {
+            document.querySelector("#froad").appendChild(x);
+            x.removeEventListener("click", Move4);
+            setTimeout(waiting(this), 2000);
+        }
+    }
+
+// function Billing1(TollBooth, id, vtype,amount) {
+//     var vid = id;
+//     var veh_type = vtype;
+
+//     var pairbooth = TollBooths[TollBooth].pairBooth;
+//     if (TollBooths[pairbooth].passingVehicles[vid] != null) {
+//         // billingTime = TollBooths[TollBooth].passingVehicles[vid].time;
+//         var billingTime1 = TollBooths[pairbooth].passingVehicles[vid].time;
+//         ch = Math.abs(Math.round((ct - billingTime1) / (1000 * 60 * 60)));
+//         console.log(ch);
+//         var m = amount;
+//         // console.log(m);
+//         if (ch < 24) {
+           
+//             if (m == 0) {
+//                 return 0;
+//             } else {
+//                 return 30;
+//             }
+//         }
+//         else {
+//             // TollBooths[TollBooth].passingVehicles[vid].time=currentTime; 
+//             return TollBooths[pairbooth].amount[veh_type];
+//         }
+//     }
+//     else {
+//         // TollBooths[TollBooth].passingVehicles[vid].time=currentTime; 
+//         return TollBooths[pairbooth].amount[veh_type];
+//     }
+// }
+
+
+
+// function waiting(x) {
+//     var d = x.getAttribute("no");
+//     var e = x.getAttribute("boothno");
+//     var f = x.getAttribute("type");
+//     document.querySelector("#f-road").appendChild(x);
+//     setTimeout(Move, 500);
+    
+//     setTimeout(Move1, 4000);
+//     setTimeout(Move2, 9000);
+//     // setTimeout(Move3,11000);
+//     // setTimeout(Move4,15000);
+
+//     function Move() {
+//         x.classList.add('newDIV');
+//     }
+//     function Move1() {
+//         x.innerHTML = Billing(e, d, f);
+//         x.classList.add("new1DIV");
+//     }
+//     function Move2() {
+//         x.classList.add("new2DIV");
+//         document.querySelector("#last").appendChild(x);
+//         x.addEventListener("click", function () {
+//             x.classList.remove("new2DIV");
+//             document.querySelector("#s-road").appendChild(x);
+//             setTimeout(Move3,11000);
+//             setTimeout(Move4,15000);
+//         });
+        
+// }
+// function Move3(){
+//     x.classList.add("new3DIV");
+//     // var p = TollBooths[e].pairBooth;
+//     // this.innerHTML = Billing1(p, d, f);
+//     // var a = Billing1(p, d, f);
+//     // console.log(a);
+// }
+// function Move4(){
+    
+//     x.classList.add("new4DIV");
+//     // document.querySelector("#first").appendChild(x);
+// }
+// function Move5(){
+//     // document.querySelector("#first").appendChild(x);
+// }
+
+// }
+</script>
+
+</html>

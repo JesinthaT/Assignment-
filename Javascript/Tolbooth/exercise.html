@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tollbooth</title>
+    <link rel="stylesheet" href="exercise.css">
+    <!-- <script src="toll.js"></script> -->
+</head>
+
+<body>
+    <div class="area">
+        <div class="empty1" id="first">
+            <div class="vehicle " onclick="waiting(this)" no="TN0021" boothno="T121" type="car">1</div>
+            <div class="vehicle " onclick="waiting(this)" no="TN0022" boothno="T121" type="car">2</div>
+            <div class="vehicle " onclick="waiting(this)" no="TN0023" boothno="T121" type="car">3</div>
+            <div class="vehicle " onclick="waiting(this)" no="TN0024" boothno="T121" type="car">4</div>
+        </div>
+        <div class="road" id="f-road">
+            <div class="tolgate">TollBooth</div>
+        </div>
+        <div class="road" id="s-road">
+            <div class="tolgate">TollBooth</div>
+        </div>
+        <div class="empty2" id="last"></div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        function waiting(x) {
+            var d = x.getAttribute("no");
+            var e = x.getAttribute("boothno");
+            var f = x.getAttribute("type");
+            document.querySelector("#f-road").appendChild(x);
+            setTimeout(Move, 500);
+            
+            setTimeout(Move1, 4000);
+            setTimeout(Move2, 9000);
+
+            function Move() {
+                x.classList.add('newDIV');
+            }
+            function Move1() {
+                x.classList.add("new1DIV");
+            }
+            function Move2() {
+                x.classList.add("new2DIV");
+                document.querySelector("#last").appendChild(x);
+                x.addEventListener("click", function () {
+                    x.classList.remove("new2DIV");
+                    document.querySelector("#s-road").appendChild(x);
+                    setTimeout(Move3,2000);
+                    setTimeout(Move4,6000);
+                });
+                
+        }
+        function Move3(){
+            x.classList.add("new3DIV");
+        }
+        function Move4(){
+            // var p = TollBooths[e].pairBooth;
+            // this.innerHTML = Billing1(p, d, f);
+            // var a = Billing1(p, d, f);
+            // console.log(a);
+            x.classList.add("new4DIV");
+            // document.querySelector("#first").appendChild(x);
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // function waiting(x) {
+    // var d = x.getAttribute("no");
+    //     var e = x.getAttribute("boothno");
+    //     var f = x.getAttribute("type");
+    // document.querySelector("#f-road").appendChild(x);
+    // // x.addEventListener("click", function () {
+    //     setTimeout(function () {
+    //         x.classList.add('newDIV');
+    //         setTimeout(function(){
+    //             this.innerHTML = Billing(e, d, f);
+    //             x.classList.add("new1DIV");
+    //             setTimeout(function(){
+    //                 x.classList.add("new2DIV");
+    //                 document.querySelector("#last").appendChild(x);
+    //                 x.addEventListener("click", function () {
+    //                     x.classList.remove("new2DIV");
+    //                     document.querySelector("#s-road").appendChild(x);
+    //                     // x.addEventListener("click", function () {
+    //                     setTimeout(function () {
+    //                         x.classList.add("new3DIV");
+    //                         // setTimeout(function(){
+    //                             var p = TollBooths[e].pairBooth;
+    //                             this.innerHTML = Billing1(p, d, f);
+    //                             var a = Billing1(p, d, f);
+    //                             console.log(a);
+    //                             // x.classList.add("new4DIV");
+    //                         // },9000);
+    //                     }, 6600);
+    //         });
+           
+    //     });
+           
+                    
+    //             },5000);
+    //         },4000);
+    //     }, 500);
+    // // });
+    
+    // }   
+    
+    </script>
+</body>
+
+</html>

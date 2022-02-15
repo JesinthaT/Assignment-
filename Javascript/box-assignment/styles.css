@@ -1,0 +1,52 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+#box-1{
+	width: 100%;
+	height: auto;
+	background-color: pink;
+	display: flex;
+	/*justify-content: flex-start;*/
+	flex-wrap: wrap;
+	padding: 50px;
+}
+.node{
+	border:2px solid red;
+	margin: 20px;
+	background-color: black;
+	width: 100px;
+	height: 100px;
+	color: white;
+	text-align: center;
+	padding-top: 40px;
+}
+
+#box-2{
+	width: 100%;
+	height: auto;
+	background-color: pink;
+	margin: 5px;
+	display: flex;
+}
+#box-2 > div{
+	width: 49%;
+	min-height: 300px;
+	height: auto;
+	background-color: skyblue;
+	margin: 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+button{
+	width: 100px;
+	height: 40px;
+	padding: 10px;
+	background-color: skyblue;
+	border: 1px solid rgb(121, 120, 120);
+	font-size: 14px;
+	border-radius: 10px;
+}
+

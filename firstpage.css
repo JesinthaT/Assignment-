@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #f7fcff;
+}
+.whole{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 40px;
+}
+
+.first{
+    width: 100%;
+    height:auto;
+    /* background-color: #dce7ed; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+   
+}
+.main{
+   width: 100%;
+   height: auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+  justify-items: center;
+  /* align-items: flex-start; */
+}
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+.headlink{
+    width: 400px;
+    height: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4A392B;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+    /* align-items: center; */
+}
+.box{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+    /* background-image: url(/home/zoho/Pictures/blue.svg); */
+    font-size: 20px;
+    /* padding: 40px; */
+    text-decoration: none;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* padding-top: 20px; */
+    margin-top: 50px;
+}
+.items{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.heading{
+    width: 80%;
+    height: 50px;
+    /* background-color: pink; */
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #854365;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 50%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///9RUVFHR0dERETg4OBBQUFMTEz5+flaWlqurq6Hh4e7u7t9fX20tLRJSUlOTk5gYGDo6OjCwsLx8fGjo6P09PSRkZHr6+udnZ3b29vPz89WVlZ3d3epqak9PT3T09NmZmZubm57e3vnA7WqAAAEK0lEQVR4nO2dyXbqMBBEseSJIR4YwxjI/3/kI29ntxx1QUhsue6ePn1Ra2FRMpMJIYQQQgghhBBCCCHktWSrWEW96SpQKwtknS3snmzhW79zlSgpTgdHgXobaQtE29rVwmadq1tYfKCCu6stIy1p8i4KHNJCX6AwS8dXVBmkhTMmmB1TdfEvknWrwP6i7+5OmYgxWEVgC1PIcFtA1aPIxs0CFSR4V6zam3EBt+Ac9Q5WYH/3Ods2ChwsWsC25nQHVyjkVunmAy5f5o0C7+gCtL+iyRJvoQIM5wYtH9lGgRm2h+6ki2YLU7yF4rWGyd8bmoEZwnM+OMPw15CGkqEZch9KaNg3Q06phIZ9M+SUSmjYN0NOqYSGNPTAfehjhGsYviGnVELDvhlySiU0pKEH7kMfI1zD8A05pRIa0tAD96GP/q/hwLIYeOBnaHma8DNRz+farr+fazNIru0nsolYe65sIvYlgdnEyQ4Jd5aufKnR50vLInHkS+Mcype2v2Mv2bkqrI7ImRHebY9G93lznDkHLFvn+hb2qOBEH9OOdx0FNsrPx6uXtUAIIYQQMgYyFa8s8AMVutnPqlzH7ey8/rf8VBaoTnN3Cx/6Fqa45eySllqMfLqb7K6JvoDNHQ8X2QyoYCx6AfETO0QQz3ebEnqELkv5dHCDzqJK63qE6+YtgQTvj+OtJyD0DCI9tVtYgwc15RG5Kpsd0aMo03zE3sPnSElryjL4tM4ixxgP3M67NhcAP01sHYQ8cKB5Awzxw8rWgfMDJ8KzZgtv+IlwChjyVN8BDX3wtycFNOybIadUQsO+GXJKJTSkoQfuQx8jXMPwDTmlEhrS0AP3oY8RrmH4hpxSCQ1p6IH70McI1zB8Q06phIZ9M+SUSmjYN0NOqSR8w9fezouiRgH4ZliUtm7nzZ+9IPg9Nd5gcwnw/sxbs4UYrtBO5HzPDZ2yVnRvA148u/fXju6h9/uiC5ROrBOsftHaRZM5GP2Td+v2YAUDLeF9JxbIKtqbyAW+I99RmWxlC0sDtXBCM7Tx58UaHbZw3f1bVony8ybJnSHh/emirpCCf2/xn3r+puPQEezcKwvMO+8OxuoWHox6E0IIIYQQ8veE/l6Mob3bBP//w9DfTxP+O4aCf09U+O/6Cv99beG/c2+Yv1sM7ZcZ/romoWHfDDmlEhrS0AP3oY8RrmH4hpxSCQ37ZsgpldCwb4acUgkNaeiB+9DHCNcwfENOqYSGfTPklEpoSEMP3Ic+RriG4RtySiU0fNJwYFmM8PM04Weins+1Vb+fa7O//f+HkGLpyCaWL/7/w6tFwp2OfGmqz5dGhXHkS2sk4ppa/P8Pp1WixHRkhKOLskDkzghvzrm2hWIBZ4S/HHfKkHXXP2doU9p15/VIbQs18ucdhBBCCCGEEEIIIYSQx/gHFSy3rZN/diYAAAAASUVORK5CYII=);
+    /* background-position: 1% 1%; */
+    background-size: cover;
+    object-fit: cover;
+}
+.desc{
+    width: 70%;
+    height: 150px;
+    /* background-color: pink; */
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #32c7c5;
+}
+

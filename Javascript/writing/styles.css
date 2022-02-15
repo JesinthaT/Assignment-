@@ -1,0 +1,20 @@
+.container{
+    width: 80%;
+    height: 800px;
+    background-color: transparent;
+    margin: auto;
+    
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    /* border: 2px solid yellow; */
+    border-radius: 50%;
+    box-shadow: rgb(240, 240, 105) 0 0 60px 15pt;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    /* background-color: white transparent; */
+}
