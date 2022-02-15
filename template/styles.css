@@ -1,0 +1,293 @@
+*{
+	box-sizing: border-box;
+}
+
+
+
+#horizontal{
+	width: 80%;
+	height: 6px;
+	background-color: black;
+	position: absolute;
+	top:45%;
+	left:35%;
+	transform: translate(-30%);	
+}
+
+
+.container{
+	width: 90%;
+	height: 700px;
+	/*background-color: #66ffcc;*/
+	margin: 50px;
+	position: relative;
+}
+.con{
+	max-width: 100px;
+   height: 100px;
+   padding: 25px;
+   text-align: center;
+   background-color: #ff0066;
+   position: absolute;
+}
+.first{
+	max-width: 220px;
+	height: 60px;
+	text-align: center;
+	padding: 20px;
+	background-color: #ff0066;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+.second{
+	width: 220px;
+	height: 80px;
+	text-align: center;
+	padding: 20px;
+	background-color: #ff0066;
+	position: absolute;
+	left: 50%;
+	top:23%;
+	transform: translate(-50%);
+}
+.third{
+  
+   top:58%;
+   left:8%;
+   transform: translate(-8%);
+}
+
+.fourth{
+	
+   top:58%;
+   left:29%;
+   transform: translate(-29%);
+}
+.fifth{
+	
+   top:58%;
+   left:50%;
+   transform: translate(-50%);
+}
+.sixth{
+	
+   top:58%;
+   left:72%;
+   transform: translate(-72%);
+}
+.seventh{
+	
+   top:58%;
+   right:4%;
+   transform: translate(-4%);
+}
+.eight-con{
+	width: 200px;
+	height: 80px;
+	background-color:#ff0066; 
+	position: absolute;
+	top:89%;
+	left: 25%;
+}
+.right{
+	width: 0px;
+	height: 0px;
+
+	/*border-right:20px solid black; */
+	border-left:20px solid black;
+	border-top:20px solid transparent;
+	border-bottom:30px solid transparent;
+    position: absolute;
+}
+.left{
+	width: 0px;
+	height: 0px;
+
+	border-right:20px solid black; 
+	/*border-left:20px solid transparent;*/
+	border-top:20px solid transparent;
+	border-bottom:30px solid transparent;
+    position: absolute;
+}
+.up{
+	width: 0px;
+	height: 0px;
+
+	border-right:20px solid transparent; 
+	border-left:20px solid transparent;
+	/*border-top:20px solid black;*/
+	border-bottom:30px solid black;
+    position: absolute;
+}
+.down{
+	width: 0px;
+	height: 0px;
+
+	border-right:20px solid transparent; 
+	border-left:20px solid transparent;
+	border-top:20px solid black;
+	/*border-bottom:30px solid white;*/
+    position: absolute;
+	
+	
+}
+.one{
+	left: 50%;
+	top:20%;
+	transform: translate(-50%);
+}
+.two{
+	left: 50%;
+	top:43%;
+	transform: translate(-50%);
+}
+.three{
+	left:10%;
+	top:55%;
+	transform: translate(-10%); 
+}
+.four{
+	left: 30.5%;
+	top:55%;
+	transform: translate(-30.5%);;
+}
+.five{
+	left:50%; 
+	top:55%;
+	transform: translate(-50%);
+}
+.six{
+	top:55%;
+	right: 29.5%;
+	transform: translate(29.5%);
+}
+.seven{
+	top:55%;
+	right: 7.5%;
+	transform: translate(7.5%);
+}
+.eight{
+	top:86%;
+	left: 28.5%;
+}
+
+.first-line{
+	width: 4px;
+	height: 78px;
+	position: absolute;
+	background-color: black;
+	left: 50%;
+	top:9%;
+	transform: translate(-50%);
+}
+.second-line{
+	width: 4px;
+	height: 69px;
+	position: absolute;
+	background-color: black;
+	left: 50%;
+	top:34%;
+	transform: translate(-50%);
+}
+.third-line{
+	width: 4px;
+	height: 60px;
+	position: absolute;
+	background-color: black;
+	left: 11%;
+	top:47%;
+	transform: translate(-11%);
+}
+.fourth-line{
+	width: 4px;
+	height: 60px;
+	position: absolute;
+	background-color: black;
+	left: 31%;
+	top:47%;
+	transform: translate(-31%);
+}
+.fifth-line{
+	width: 4px;
+	height: 60px;
+	position: absolute;
+	background-color: black;
+	left: 50%;
+	top:47%;
+	/*transform: translate(-50%);*/
+}
+.sixth-line{
+	width: 4px;
+	height: 60px;
+	position: absolute;
+	background-color: black;
+	left: 70%;
+	top:47%;
+	transform: translate(-70%);
+}
+.seventh-line{
+	width: 4px;
+	height: 60px;
+	position: absolute;
+	background-color: black;
+	right: 9%;
+	top:47%;
+	transform: translate(-9%);
+}
+.eight-line{
+	width: 80%;
+	height: 6px;
+	background-color: black;
+	position: absolute;
+	left: 12%;
+	top:80%;
+}
+.nine-line{
+	width: 4px;
+	height: 60px;
+	background-color: black;
+	position: absolute;
+	left: 12%;
+	top: 72%;
+}
+.ten-line{
+	width: 4px;
+	height: 60px;
+	background-color: black;
+	position: absolute;
+	left: 30%;
+	top:72%;
+}
+.leven-line{
+	width: 4px;
+	height: 60px;
+	background-color: black;
+	position: absolute;
+	left: 50%;
+	top:72%;
+}
+.twel-line{
+   width: 4px;
+	height: 60px;
+	background-color: black;
+	position: absolute;
+	left: 70%;
+	top:72%;
+}
+.thirteen-line{
+	width: 4px;
+	height: 60px;
+	background-color: black;
+	position: absolute;
+	right: 8%;
+	top:72%;
+}
+.fourteen-line{
+	width: 4px;
+	height: 60px;
+	background-color: black;
+	position: absolute;
+	left: 30%;
+	top:80%;
+}

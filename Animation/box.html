@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* background-color: pink; */
+            background-image: url(/home/zoho/Downloads/profile2.jpg);
+            /* background-attachment: fixed; */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" onmousewheel="get(event)">
+        <div class="box"></div>
+    </div>
+
+
+    <script>
+        var n=1;
+       var m=0.1;
+       function get(e){
+           // console.log("bdncbdcbdh");
+           var x=e.deltaY;
+           // console.log(x.d eltaY);
+           var box=document.querySelector(".box");
+          
+           if(x>0){
+               
+               box.style.transform=`scale(${n+=m})`;
+           }
+           else{
+            box.style.transform=`scale(${n-=m})`;
+           }
+
+       }
+       </script>
+</body>
+</html>

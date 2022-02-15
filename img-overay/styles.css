@@ -1,0 +1,210 @@
+.main{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    align-content: center;
+	margin: 10px;
+}
+
+.container{
+	width: 300px;
+	height: 200px;
+	position: relative;
+}
+.image{
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+}
+.overlay{
+	position: absolute;
+	text-align: center;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+    opacity: 0;
+    transition: 1s;
+}
+.text{
+	color:white;
+	position: absolute;
+	top:50%;
+	left:50%;
+}
+.container:hover .overlay{
+     opacity: 1;
+}
+.container:hover .image{
+	opacity:0;
+}
+
+
+
+.container1{
+	
+	width: 300px;
+	height: 200px;
+	position: relative;
+}
+.image1{
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+	opacity: 1;
+}
+.box{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.6
+}
+.text1{
+	background-color: #4CAF50;
+	color: white;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	padding: 10px;
+	font-size: 20px;
+}
+.container1:hover .image1{
+	opacity: 0.5;
+}
+.container1:hover .box{
+	opacity: 1;
+}
+.container2{
+	width: 300px;
+	height: 200px;
+	position: relative;
+}
+.image2{
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+}
+.top{
+	background-color: #008CBA;
+	position: absolute;
+	transition: 0.5s;
+	left: 0;
+	right: 0;
+	bottom: 100%;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+}
+.text2{
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 20px;
+	overflow: hidden;
+}
+.container2:hover .top{
+	height: 100%;
+	bottom: 0;
+}
+.container3{
+	width: 300px;
+	height: 200px;
+	position: relative;
+}
+.image3{
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+}
+.bottom{
+    background-color: #008CBA;
+	position: absolute;
+	transition: 0.5s;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+}
+.text3{
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 20px;
+	overflow: hidden;
+}
+.container3:hover .bottom{
+   height: 100%;
+}
+.container4{
+	width: 300px;
+	height: 200px;
+	position: relative;
+}
+.image4{
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+}
+.left{
+    background-color: #008CBA;
+	position: absolute;
+	transition: 0.5s;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: 100%;
+	overflow: hidden;
+}
+.text4{
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 20px;
+	overflow: hidden;
+}
+.container4:hover .left{
+   width: 100%;
+}
+.container5{
+	width: 300px;
+	height: 200px;
+	position: relative;
+}
+.image5{
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+}
+.right{
+    background-color: #008CBA;
+	position: absolute;
+	transition: 0.5s;
+	left: 100%;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: 100%;
+	overflow: hidden;
+}
+.text5{
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 20px;
+	overflow: hidden;
+}
+.container5:hover .right{
+   width: 100%;
+   left: 0;
+}

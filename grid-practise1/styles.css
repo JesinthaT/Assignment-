@@ -1,0 +1,95 @@
+div{
+	border-radius: 20px;
+}
+.container{
+	width: 80%;
+	height: 600px;
+	background-color: pink;
+	border-radius: 40px;
+	box-sizing: border-box;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns:25% 35% 37%;
+    grid-auto-rows:auto;
+    grid-column-gap:10px;
+}
+.container > div{
+   
+   border-radius: 40px;
+	
+
+}
+.first-container{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.first-container > div{
+	
+	height: 40px;
+	background-color: #f7ef7e;
+    padding: 10px;
+    border: 1px solid black;
+}
+.nav{
+	display: flex;
+	flex-direction: column;
+}
+.second-container{
+	height: 400px;
+	display: grid;
+
+	grid-template-columns:33% 33% 33%;
+	grid-auto-rows:50px;
+
+}
+.second-container > div{
+ background-color:#f7ef7e ;
+ padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+}
+.nav1{
+	display: flex;
+	justify-content: space-around;
+}
+
+.third-container{
+  height: 280px;
+  display: grid;
+  grid-template-columns:25% 25% 25% 25%;
+  grid-auto-rows:45px;
+}
+.third-container > div {
+	background-color: #f7ef7e;
+	padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+}
+.nav3{
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

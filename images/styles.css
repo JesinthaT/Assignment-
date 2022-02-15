@@ -1,0 +1,52 @@
+body{
+	font-family: 'Style Script', cursive;
+}
+
+div{
+	
+	height: 200px;
+	
+	border:4px solid transparent;
+	border-image: url(/home/zoho/Downloads/image7.jpeg) 20 round;
+	/*background-image:url(/home/zoho/Downloads/horizontal2.jpeg);*/
+    background:url(/home/zoho/Downloads/flower.png) right bottom no-repeat,url(/home/zoho/Downloads/paper.jpeg) left top repeat;
+    /*background-image:url(/home/zoho/Downloads/flower.png);*/
+	/*background-repeat:no-repeat, repeat;*/
+	/*background-position:  right-bottom,left-top;*/
+	/*background-size: 100% 400px;*/
+
+}
+
+.container{
+	background:url(/home/zoho/Downloads/horizontal3.jpg) no-repeat center fixed;
+	background-size: cover;
+	background-origin: border-box;
+	
+}
+
+#con{
+	width: 20%;
+	border:2px solid; 
+	word-wrap:break-word;
+	word-break: break-all;
+
+}
+#container{
+	
+	width:20%;
+	white-space: nowrap;
+	border: 2px solid;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+#container:hover{
+	overflow: visible;
+}
+/*h1{
+	font-family: Roboto_Mono;
+}
+@font-face {
+	font-family:Roboto_Mono;
+	src:url(/home/zoho/Downloads/Roboto_Mono.zip);
+	font-weight: bold;
+}*/

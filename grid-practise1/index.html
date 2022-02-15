@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid Layouts</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+ <div class="container">
+ 	<div class="first-container">
+ 	 <div >The Header</div>
+ 	 <div  class="nav" style="height: 80px;">
+ 	 	<a href="#">Nav1</a>
+ 	 	<a href="#">Nav2</a>
+ 	 	<a href="#">Nav3</a>
+ 	 </div>
+ 	 <div style="height: 150px; font-size: 20px;">
+ 	 	The main article area <br><br>
+ 	 	bcbhudhhhdu hgjd dvshdhdb bvdsgdh <br>
+ 	 	hjvbhjfvbf nfhffhfbrf fhgfhdfbd <br>
+ 	 	dbvfvbf vdbbdhcb cbcdbcdj	
+ 	 </div>
+ 	 <div>Slidebar</div>
+ 	 <div>Advertising</div>
+ 	 <div>The Footer</div>
+   </div>
+ 
+ 	
+ 	<div class="second-container">
+ 		<div style="grid-column:1/4;">The Header</div>
+ 		<div class="nav1" style="grid-column:1/4;"><a href="#">Nav1</a>
+ 	 	<a href="#">Nav2</a>
+ 	 	<a href="#">Nav3</a></div>
+ 		<div style="grid-row:span 4;">Slidebar</div>
+ 		<div style="grid-row:span 4; grid-column:span 2;">The main article area <br><br>
+ 	 	bcbhudhhhdu hgjd dvshdhdb bvdsgdh <br>
+ 	 	hjvbhjfvbf nfhffhfbrf fhgfhdfbd <br>
+ 	 	dbvfvbf vdbbdhcb cbcdbcdj	</div>
+ 		<div >Advertising</div>
+ 		<div style="grid-column:span 2">The footer</div>
+ 	</div>
+ 	<div class="third-container">
+ 		<div style="grid-column:1/5;"> The Header</div>
+ 		<div class="nav3" style="grid-row:span 4;"><a href="#">Nav1</a>
+ 	 	<a href="#">Nav2</a>
+ 	 	<a href="#">Nav3</a></div>
+ 		<div style="grid-row:span 4; grid-column:span 2">The main article area <br><br>
+ 	 	bcbhudhhhdu hgjd dvshdhdb bvdsgdh <br>
+ 	 	hjvbhjfvbf nfhffhfbrf fhgfhdfbd <br>
+ 	 	dbvfvbf vdbbdhcb cbcdbcdj</div>
+ 		<div style="grid-row:span 2;">Slidebar</div>
+ 		<div style="grid-row:span 2;">Advertising</div>
+ 		<div style="grid-column:1/5;">The Footer</div>
+ 	</div>
+ </div>
+</body>
+</html>
