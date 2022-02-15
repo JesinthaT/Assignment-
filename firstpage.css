@@ -74,9 +74,8 @@
     /* padding-top: 20px; */
     margin-top: 50px;
 }
-.box:hover{
-    transform:scale(0.5);
-}
+
+
 .items{
     width: 100%;
     height: 100%;
