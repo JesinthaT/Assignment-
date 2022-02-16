@@ -74,7 +74,11 @@
     /* padding-top: 20px; */
     margin-top: 50px;
 }
-
+.box:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transform: scale(1.0410);
+    transition: 300ms;
+}
 
 .items{
     width: 100%;
