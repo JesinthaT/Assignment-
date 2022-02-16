@@ -10,7 +10,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   background-color: #f7fcff;
+   background-color: #ffffff;
 }
 .whole{
     width: 100%;
@@ -73,6 +73,7 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     /* padding-top: 20px; */
     margin-top: 50px;
+    border:1px solid #dedede;
 }
 .box:hover{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
