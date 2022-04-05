@@ -101,7 +101,7 @@ function Billing(TollBooth, id, vtype, amount) {
 }
 
 var array = ["TN0021", "TN0022", "TN0023"];
-var array1 = ["TN0024", "TN0025", "TN0026"]
+// var array1 = ["TN0024", "TN0025", "TN0026"]
 function create() {
     for (i = 0; i < array.length; i++) {
         var z = document.createElement("div");
@@ -114,16 +114,16 @@ function create() {
         // z.setAttribute("onclick","waiting(this");
         document.querySelector("#first").appendChild(z);
     }
-    for (j = 0; j < array1.length; j++) {
-        var z = document.createElement("div");
-        z.className = "vehicle";
-        z.setAttribute("no", array1[j]);
-        z.setAttribute("boothno", "T121");
-        z.setAttribute("type", "car");
-        z.setAttribute("id", "0");
-        z.addEventListener("click", waiting1);
-        document.querySelector("#last").appendChild(z);
-    }
+//     for (j = 0; j < array1.length; j++) {
+//         var z = document.createElement("div");
+//         z.className = "vehicle";
+//         z.setAttribute("no", array1[j]);
+//         z.setAttribute("boothno", "T121");
+//         z.setAttribute("type", "car");
+//         z.setAttribute("id", "0");
+//         z.addEventListener("click", waiting1);
+//         document.querySelector("#last").appendChild(z);
+//     }
 }
 
 function waiting(e) {
